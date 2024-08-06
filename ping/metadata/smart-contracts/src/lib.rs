@@ -15,6 +15,11 @@ extern "C" fn handle() {
 
 #[no_mangle]
 extern "C" fn init() {
-    let _init_message: String = msg::load().expect("Can't load init message");
-    debug!("Program was initialized with message: {:?}", init_message);
+    debug!("Program was initialized");
+}
+
+#[no_mangle]
+extern "C" fn state() {
+    let mut_state: Vec<String> = unsafe { LOG_STATE.clone() };
+    msg::reply(mut_state, 0).expect("error while sending the state");
 }
