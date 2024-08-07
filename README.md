@@ -1,22 +1,10 @@
-## Deploy to Testnet
-1. Deploy [program](https://github.com/gear-foundation/Simple-Counter-pingv2/blob/master/frontend/src/assets/meta/hamster.opt.wasm) to the Testnet, please refer to the [documentation](https://wiki.gear-tech.io/docs/getting-started-in-5-minutes/#deploy-your-smart-contract-to-the-testnet).
+## Vara Tutorials
+This tutorial is intended to show how to deploy smart contracts on Vara Network, using metadata and IDL 
 
-## Declare Environment Variables:
-Create a `.env` file; `.env.example` will let you know what variables are expected.
+The next are the projects from basic to advanced:
 
-- `VITE_NODE_ADDRESS`: The network address used by the contract.
-- `VITE_CONTRACT_ADDRESS`: The program ID of the deployed contract within your application.
 
-## Using Yarn
+1. Ping - A simple example on how to send a message to a smart contract using a simple front-end
 
-1. Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
-
-2. Install dependencies the project
-   ```bash
-   yarn install
-   yarn build
-   ```
-3. How to run
-* `yarn dev` - starts app in dev mode
-* `yarn build` - creates production build
-* `yarn start` - runs local server with production build
+2. Traffic Light - A contract using different data types in order to show how to interact with the contracts with a different payload
+     
